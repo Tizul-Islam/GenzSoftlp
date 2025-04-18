@@ -1,33 +1,59 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
 
 const Navbar = ({ marginTop = 9 }) => {
   const navItems = (
     <>
       <li>
-        <Link to="/" className="text-lg">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `text-lg ${
+              isActive
+                ? "text-white font-semibold underline"
+                : "text-gray-100 font-normal"
+            }`
+          }
+        >
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/about" className="text-lg">
-          About
-        </Link>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `text-lg ${
+              isActive
+                ? "text-white font-semibold underline"
+                : "text-gray-100 font-normal"
+            }`
+          }
+        >
+          About Us
+        </NavLink>
       </li>
       <li>
-        <Link to="/services" className="text-lg">
+        <NavLink
+          to="/services"
+          className={({ isActive }) =>
+            `text-lg ${
+              isActive
+                ? "text-white font-semibold underline"
+                : "text-gray-100 font-normal"
+            }`
+          }
+        >
           Services
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link to="/#portfolio" className="text-lg">
+        <a href="/#portfolio" className="text-lg text-white">
           Portfolio
-        </Link>
+        </a>
       </li>
     </>
   );
-  // navbar bg-transparent mt-9">
 
   return (
     <div className={`navbar bg-transparent mt-${marginTop}`}>

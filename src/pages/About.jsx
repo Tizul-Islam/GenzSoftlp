@@ -1,16 +1,20 @@
 import React from "react";
-import Banner from "../components/Banner";
 import BusinessInfo from "../components/BusinessInfo";
 import FQASection from "../components/FQASection";
 import Footer from "./Footer";
 import GenzSoftIdea from "../components/GenzSoftIdea";
 import CustomersLove from "../components/CustomersLove";
 import TransformBusiness from "../components/TransformBusiness";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
     <>
-      <Banner />
+      <div className="bg-[#303090] py-5">
+        <div className="w-[90vw] mx-auto">
+          <Navbar marginTop={0} />
+        </div>
+      </div>
       <TransformBusiness />
       <div className="bg-[#F5F7FA] py-10">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-20 max-w-6xl mx-auto px-4 lg:px-0">
