@@ -11,7 +11,7 @@ const Services = () => {
     <>
       <div className="bg-[#303090] py-5">
         <div className="w-[90vw] mx-auto">
-          <Navbar marginTop={0} />
+          <Navbar />
         </div>
       </div>
       <ServiceSection isServicePage={true} />

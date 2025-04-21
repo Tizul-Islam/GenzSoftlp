@@ -13,7 +13,7 @@ const Banner = () => {
     >
       {/* <div className="hero-overlay w-[100vw]"></div> */}
       <div className="text-center">
-        <div className="w-[90vw]">
+        <div className="w-[90vw] mx-auto my-5">
           <Navbar />
         </div>
         <div className="max-w-5xl mx-auto text-center mt-10 lg:mt-36">

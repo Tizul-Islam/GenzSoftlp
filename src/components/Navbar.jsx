@@ -1,8 +1,9 @@
 import React from "react";
+import clsx from "clsx";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
 
-const Navbar = ({ marginTop = 9 }) => {
+const Navbar = () => {
   const navItems = (
     <>
       <li>
@@ -48,15 +49,24 @@ const Navbar = ({ marginTop = 9 }) => {
         </NavLink>
       </li>
       <li>
-        <a href="/#portfolio" className="text-lg text-white">
+        <NavLink
+          to="/portfolio"
+          className={({ isActive }) =>
+            `text-lg ${
+              isActive
+                ? "text-white font-semibold underline"
+                : "text-gray-100 font-normal"
+            }`
+          }
+        >
           Portfolio
-        </a>
+        </NavLink>
       </li>
     </>
   );
 
   return (
-    <div className={`navbar bg-transparent mt-${marginTop}`}>
+    <div className="navbar bg-transparent">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
