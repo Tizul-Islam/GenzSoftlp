@@ -1,6 +1,13 @@
 import React from "react";
 import ServicesImg1 from "../assets/services_1.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
+const slugify = (text) =>
+  text
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^\w-]+/g, "");
 
 const ServicesCard = ({ data }) => {
   return (
@@ -13,12 +20,22 @@ const ServicesCard = ({ data }) => {
         <p className="font-medium text-center text-[#717171]">
           {data.description}
         </p>
-        <h5 className="text-[#0948FD] text-lg lg:text-xl font-semibold flex items-center gap-2">
+        <Link
+          to={`/serviceDetails/${slugify(data.title)}`}
+          state={{ data }}
+          className="text-[#0948FD] text-lg lg:text-xl font-semibold flex items-center gap-2"
+        >
           Readmore
           <span>
             <FaArrowRightLong className="text-2xl" />
           </span>
-        </h5>
+        </Link>
+        {/* <h5 className="text-[#0948FD] text-lg lg:text-xl font-semibold flex items-center gap-2">
+          Readmore
+          <span>
+            <FaArrowRightLong className="text-2xl" />
+          </span>
+        </h5> */}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const About = () => {
       </div>
       <TransformBusiness />
       <div className="bg-[#F5F7FA] py-10">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-20 max-w-6xl mx-auto px-4 lg:px-0">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-20 max-w-7xl mx-auto px-4 lg:px-0">
           <div>
             <h5 className="text-[#0948FD] text-[35px] font-bold mb-10">
               Our Vision

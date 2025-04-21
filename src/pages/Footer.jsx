@@ -10,7 +10,7 @@ import {
 const Footer = () => {
   return (
     <div className="bg-[#303090] text-white">
-      <footer className="footer sm:footer-horizontal max-w-[100rem] mx-auto font-roboto p-11">
+      <footer className="footer sm:footer-horizontal max-w-[90rem] mx-auto font-roboto p-11">
         <aside className="w-auto lg:w-[550px]">
           <img src={logo} alt="" className="" />
           <p className="text-[15px] text-justify mt-[18px]">

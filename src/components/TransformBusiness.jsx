@@ -4,7 +4,7 @@ import rightImg from "../assets/about.png";
 const TransformBusiness = () => {
   return (
     <div className="bg-white py-10">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-center gap-16 px-4 lg:px-0">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center justify-center gap-16 px-4 lg:px-0">
         <div className="w-full lg:w-2/5">
           <img src={rightImg} alt="section image" />
         </div>
