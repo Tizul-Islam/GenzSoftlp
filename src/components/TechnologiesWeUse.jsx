@@ -11,26 +11,46 @@ import pythonIcon from "../assets/Icon/devicon_python.png";
 import swiftIcon from "../assets/Icon/devicon_swift.png";
 
 const techStack = [
-  { name: "Flutter", icon: flutterIcon },
   { name: "Dart", icon: dartIcon },
   { name: "React", icon: reactIcon },
   { name: "Kotlin", icon: kotlinIcon },
+  { name: "Flutter", icon: flutterIcon },
   { name: "Java", icon: javaIcon },
   { name: "Objective-C", icon: objcIcon },
   { name: "Python", icon: pythonIcon },
+  { name: "Swift", icon: swiftIcon },
   { name: "Swift", icon: swiftIcon },
   { name: "Swift", icon: swiftIcon },
 ];
 
 const TechnologiesWeUse = () => {
   return (
-    <section className="py-10 bg-white">
-      <div className="max-w-6xl mx-auto px-4 lg:px-0">
+    <section className="py-12 bg-white">
+      <div className="max-w-6xl mx-auto px-4 lg:px-0 my-12">
         <h2 className="text-3xl md:text-4xl lg:text-[45px] font-bold text-center text-[#0948FD] mb-12">
           Technologies We Use
         </h2>
-        <div className="flex flex-wrap gap-28 justify-center items-center">
-          {techStack.map((tech, idx) => (
+        <div className="flex flex-wrap gap-16 lg:gap-44 justify-center items-center">
+          {techStack.slice(0, 3).map((tech, idx) => (
+            <div
+              key={idx}
+              className="w-32 h-36 flex flex-col items-center justify-center"
+            >
+              <div
+                className="relative w-full h-full bg-no-repeat bg-center bg-contain"
+                style={{ backgroundImage: `url(${hexVector})` }}
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="absolute inset-0 m-auto w-16 object-contain"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-16 lg:gap-44 justify-center items-center">
+          {techStack.slice(3, 7).map((tech, idx) => (
             <div
               key={idx}
               className="w-32 h-36 flex flex-col items-center justify-center"
@@ -61,6 +81,25 @@ const TechnologiesWeUse = () => {
                   />
                 </div>
               )}
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-wrap gap-16 lg:gap-44 justify-center items-center">
+          {techStack.slice(7, 10).map((tech, idx) => (
+            <div
+              key={idx}
+              className="w-32 h-36 flex flex-col items-center justify-center"
+            >
+              <div
+                className="relative w-full h-full bg-no-repeat bg-center bg-contain"
+                style={{ backgroundImage: `url(${hexVector})` }}
+              >
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="absolute inset-0 m-auto w-16 object-contain"
+                />
+              </div>
             </div>
           ))}
         </div>
