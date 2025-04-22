@@ -7,6 +7,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import DeliverSection from "../components/DeliverSection";
 import IndustriesServed from "../components/IndustriesServed";
 import TechnologiesWeUse from "../components/TechnologiesWeUse";
+import WorkedWithSection from "../components/WorkedWithSection";
 
 const deslugify = (slug) =>
   slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -74,6 +75,7 @@ const ServicesDetails = () => {
         <DeliverSection />
         <TechnologiesWeUse />
         <IndustriesServed />
+        <WorkedWithSection />
         <Footer />
       </div>
     </>

@@ -13,47 +13,47 @@ import {
 
 const industries = [
   {
-    icon: <FaShoppingCart className="text-[#0066FF] text-xl" />,
+    icon: <FaShoppingCart className="text-[#0066ffb9] text-xl" />,
     title: "E-commerce",
     desc: "Scalable platforms that drive online sales and customer engagement",
   },
   {
-    icon: <FaPiggyBank className="text-[#0066FF] text-xl" />,
+    icon: <FaPiggyBank className="text-[#0066ffb9] text-xl" />,
     title: "FinTech",
     desc: "Secure, efficient, and compliant financial applications",
   },
   {
-    icon: <FaSatelliteDish className="text-[#0066FF] text-xl" />,
+    icon: <FaSatelliteDish className="text-[#0066ffb9] text-xl" />,
     title: "Telecommunication",
     desc: "Smart integrations and robust service portals",
   },
   {
-    icon: <FaPills className="text-[#0066FF] text-xl" />,
+    icon: <FaPills className="text-[#0066ffb9] text-xl" />,
     title: "Pharmaceuticals",
     desc: "Streamlined operations and data-driven solutions",
   },
   {
-    icon: <FaHospital className="text-[#0066FF] text-xl" />,
+    icon: <FaHospital className="text-[#0066ffb9] text-xl" />,
     title: "Healthcare",
     desc: "Innovative tools for better care and patient management",
   },
   {
-    icon: <FaCity className="text-[#0066FF] text-xl" />,
+    icon: <FaCity className="text-[#0066ffb9] text-xl" />,
     title: "Local Enterprises",
     desc: "Digital empowerment for small and mid-sized businesses",
   },
   {
-    icon: <FaSeedling className="text-[#0066FF] text-xl" />,
+    icon: <FaSeedling className="text-[#0066ffb9] text-xl" />,
     title: "Agriculture",
     desc: "Smart tech for sustainable farming and agri-commerce",
   },
   {
-    icon: <FaGlobe className="text-[#0066FF] text-xl" />,
+    icon: <FaGlobe className="text-[#0066ffb9] text-xl" />,
     title: "MNCs",
     desc: "Enterprise-grade solutions for global scale",
   },
   {
-    icon: <FaRocket className="text-[#0066FF] text-xl" />,
+    icon: <FaRocket className="text-[#0066ffb9] text-xl" />,
     title: "Startups",
     desc: "From MVP to market, full-cycle development support",
   },

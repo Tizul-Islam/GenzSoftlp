@@ -24,7 +24,7 @@ const Banner = () => {
             Leverage next-gen web, mobile, and cloud solutions to stay ahead in
             the digital era and drive unstoppable success.
           </p>
-          <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mb-10 lg:mb-6">
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-8 mb-10 lg:mb-6 mt-8 lg:mt-20">
             <button className="rounded-[100px] bg-white text-[#0948FD] text-lg font-inter font-semibold text-center py-4 px-7">
               Get in touch
             </button>
