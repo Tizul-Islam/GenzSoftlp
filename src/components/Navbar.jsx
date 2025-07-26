@@ -62,6 +62,20 @@ const Navbar = () => {
           Portfolio
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/details"
+          className={({ isActive }) =>
+            `text-lg ${
+              isActive
+                ? "text-white font-semibold underline"
+                : "text-gray-100 font-normal"
+            }`
+          }
+        >
+          Details
+        </NavLink>
+      </li>
     </>
   );
 

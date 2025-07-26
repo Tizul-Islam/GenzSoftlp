@@ -3,9 +3,9 @@ import Footer from "./Footer";
 import Navbar from "../components/Navbar";
 import CustomersLove from "../components/CustomersLove";
 import FQASection from "../components/FQASection";
-import ContainCard from '../components/Contain/Containcard';
-import StorySection from '../Components/StorySection/StorySection';
-const Portfolio = () => {
+import DetailsSection from '../components/Detailsbar/DetailsSection/DetailsSection';
+
+const Details = () => {
   return (
     <>
       <div className="bg-[#303090] py-5">
@@ -13,13 +13,10 @@ const Portfolio = () => {
           <Navbar />
         </div>
       </div>
-      {/* <FQASection bgColor="bg-[#FFF]" /> */}
-      {/* <CustomersLove /> */}
-      <ContainCard />
-      <StorySection />
+      <DetailsSection/>   
       <Footer />
     </>
   );
 };
 
-export default Portfolio;
+export default Details;
