@@ -10,10 +10,9 @@ const Navbar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `text-lg ${
-              isActive
-                ? "text-white font-semibold underline"
-                : "text-gray-100 font-normal"
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
             }`
           }
         >
@@ -24,10 +23,9 @@ const Navbar = () => {
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            `text-lg ${
-              isActive
-                ? "text-white font-semibold underline"
-                : "text-gray-100 font-normal"
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
             }`
           }
         >
@@ -38,10 +36,9 @@ const Navbar = () => {
         <NavLink
           to="/services"
           className={({ isActive }) =>
-            `text-lg ${
-              isActive
-                ? "text-white font-semibold underline"
-                : "text-gray-100 font-normal"
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
             }`
           }
         >
@@ -50,12 +47,24 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/team"
+          className={({ isActive }) =>
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
+            }`
+          }
+        >
+          Team
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to="/portfolio"
           className={({ isActive }) =>
-            `text-lg ${
-              isActive
-                ? "text-white font-semibold underline"
-                : "text-gray-100 font-normal"
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
             }`
           }
         >
@@ -66,10 +75,9 @@ const Navbar = () => {
         <NavLink
           to="/details"
           className={({ isActive }) =>
-            `text-lg ${
-              isActive
-                ? "text-white font-semibold underline"
-                : "text-gray-100 font-normal"
+            `text-lg ${isActive
+              ? "text-white font-semibold underline"
+              : "text-gray-100 font-normal"
             }`
           }
         >
