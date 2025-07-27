@@ -1,5 +1,5 @@
 import React from "react";
-import clsx from "clsx";
+
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/brandLogo.png";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
           Services
         </NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink
           to="/team"
           className={({ isActive }) =>
@@ -57,7 +57,7 @@ const Navbar = () => {
         >
           Team
         </NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink
           to="/portfolio"
@@ -81,7 +81,7 @@ const Navbar = () => {
             }`
           }
         >
-          Details
+          Career 
         </NavLink>
       </li>
     </>

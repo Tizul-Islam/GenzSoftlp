@@ -5,6 +5,7 @@ import CustomersLove from "../components/CustomersLove";
 import FQASection from "../components/FQASection";
 import ContainCard from '../components/Contain/Containcard';
 import StorySection from '../Components/StorySection/StorySection';
+import Header from "../components/Header/Header"
 const Portfolio = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const Portfolio = () => {
           <Navbar />
         </div>
       </div>
+      <Header/>
       {/* <FQASection bgColor="bg-[#FFF]" /> */}
       {/* <CustomersLove /> */}
       <ContainCard />
